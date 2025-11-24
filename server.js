@@ -16,7 +16,9 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/ecommerce';
+const MONGODB_URI = process.env.MONGODB_URI || 'MONGODB_URI=mongodb+srv://admin:admin@cluster0.tsrruf8.mongodb.net/ecommerce_db?retryWrites=true&w=majority
+PORT=4000
+';
 
 mongoose.connect(MONGODB_URI)
   .then(() => console.log('MongoDB connected successfully'))
